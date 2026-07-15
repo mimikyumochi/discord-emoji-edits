@@ -2,7 +2,8 @@
     --broken-heart-svg: url("./broken_heart.svg");
 }
 
-img.emoji[alt="💔"] {
+img[alt="💔"],
+img[alt=":broken_heart:"] {
     /* squish image into 1 transparent pixel */
     content: url("data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
 
