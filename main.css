@@ -1,12 +1,14 @@
 :root {
     --broken-heart-svg: url("https://raw.githubusercontent.com/mimikyumochi/discord-emoji-edits/refs/heads/master/broken_heart.svg");
+
+    --squish: url("data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7")
 }
 
 img[alt="💔"],
 img[alt=":broken_heart:"],
 img[src="/assets/9af131d0828468bc.svg"] {
     /* squish image into 1 transparent pixel */
-    content: url("data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+    content: var(--squish);
 
     /* dip it in paint */
     background-color: var(--broken-heart-color);
