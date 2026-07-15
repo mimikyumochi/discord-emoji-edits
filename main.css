@@ -1,0 +1,28 @@
+:root {
+    --broken-heart-color: #f4900c;
+    --broken-heart-svg: url("./broken_heart.svg");
+}
+
+img.emoji[alt="💔"] {
+    /* squish image into 1 transparent pixel */
+    content: url("data:image/png;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+
+    /* dip it in paint */
+    background-color: var(--broken-heart-color);
+
+    /* apply colour to shape */
+    -webkit-mask: var(--broken-heart-svg) center / contain no-repeat;
+    mask: var(--broken-heart-svg) center / contain no-repeat;
+}
+
+button[data-name="broken_heart"] div[class*="emojiSpriteImage_"] {
+    /* brutally murder the original */
+    background-image: none !important;
+
+    /* forcefully change its colour */
+    background-color: var(--broken-heart-color) !important;
+
+    /* apply colour to shape */
+    -webkit-mask: var(--broken-heart-svg) center / contain no-repeat;
+    mask: var(--broken-heart-svg) center / contain no-repeat;
+}
