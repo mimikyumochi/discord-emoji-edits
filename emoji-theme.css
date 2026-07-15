@@ -1,0 +1,7 @@
+@import url("https://cdn.jsdelivr.net/gh/mimikyumochi/discord-emoji-edits@master/main.css");
+
+:root {
+    --orange-heart: #f4900c;
+
+    --broken-heart-color: var(--orange-heart);
+}
